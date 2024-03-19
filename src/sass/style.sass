@@ -1,0 +1,74 @@
+*
+    box-sizing: border-box
+
+$orange_color: #f8f200
+$dark_color: #000
+$light_color: #fff
+$text_color: #777
+
+=social_links_style
+    width: 30px
+    height: 30px
+    display: inline-block
+
+=corner
+    overflow: hidden
+    clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%)
+
+.conatiner
+    max-width: 100%
+
+.header
+    position: absolute
+    width: 100%
+    &_social
+        &_item-youtube
+            background: url('../icons/youtube.svg')
+            +social_links_style
+        &_item-vk
+            background: url('../icons/vk.svg')
+            +social_links_style
+        &_item-facebook
+            background: url('../icons/facebook-rect.png')
+            +social_links_style
+        &_item-twitter
+            background: url('../icons/twitter-square.svg')
+            +social_links_style
+        &_item-twitch
+            background: url('../icons/twitch.svg')
+            +social_links_style
+        &_item-instagram
+            background: url('../icons/instagram.svg')
+            +social_links_style
+    &_wrapper
+        display: flex
+        justify-content: space-between
+        align-items: center
+        padding: 20px 0px 20px 0
+.main
+    display: block
+.hero
+    position: relative
+    height: 1000px
+    &_bg
+        position: absolute
+        background: url('../img/bg/bg_slider_3.jpg') center (center / cover) no-repeat
+        height: 100%
+        width: 100%
+        z-index: -1
+    &_wrapper
+        display: flex
+        height: 100%
+        align-items: flex-end
+        justify-content: flex-end
+        margin: 0 auto
+        padding: 0 36px
+        position: relative
+        z-index: 5
+        &_container
+            position: relative
+            z-index: 5
+            max-width: 524px
+            padding: 70px
+            background-color: $orange_color
+            +corner

@@ -1,5 +1,6 @@
 *
     box-sizing: border-box
+    font-family: "Stalinist One", sans-serif
 
 $orange_color: #f8f200
 $dark_color: #000
@@ -14,6 +15,11 @@ $text_color: #777
 =corner
     overflow: hidden
     clip-path: polygon(10% 0, 100% 0, 100% 83%, 90% 100%, 0 100%, 0 17%)
+
+=btn_reset
+    border: none
+    cursor: pointer
+
 
 .conatiner
     max-width: 100%
@@ -72,3 +78,17 @@ $text_color: #777
             padding: 70px
             background-color: $orange_color
             +corner
+    &_btn
+        background-color: $dark_color
+        color: $orange_color
+        font-weight: 700
+        text-align: center
+        font-size: 24
+        padding: 24px 50px
+        +btn_reset
+    &_title
+        margin: 0
+        margin-bottom: 24px
+        font-weight: 400
+        font-size: 35px
+        color: $dark_color

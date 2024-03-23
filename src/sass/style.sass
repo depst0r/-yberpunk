@@ -29,7 +29,7 @@ $blue_color: #52BEDC
 
 
 .container
-    max-width: 100%
+    max-width: 1920px
     margin: 0 auto
     padding: 0 36px
 
@@ -125,3 +125,13 @@ $blue_color: #52BEDC
                 +corner
                 &:not(:last-child)
                     margin-bottom: 32px
+
+.game
+    position: relative
+    background-color: $dark_color
+    &:before
+        content: ''
+        position: absolute
+        background-image: url('../img/noize/border-1.png')
+        height: 70px
+        width: 100%

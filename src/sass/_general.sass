@@ -183,8 +183,29 @@
                 color: $dark_color
                 background-color: $orange_color
                 +btn_reset
+            &_checkbox > input
+                margin-right: 10px
             &_checkbox
+                display: flex
                 position: relative
+                &_text
+                    display: flex
+                    align-items: center
+                    font-weight: 300
+                    font-size: 10px
+                    line-height: 14px
+                    color: $light_color
+        &_pictures > div
+            &:nth-child(2)
+                padding-left: 50px
         &_pictures
-            padding-top: 30px
-                
+            display: flex
+            justify-content: space-between
+            padding: 30px
+
+.hp
+    padding-top: 100px
+    background-color: $orange_color
+    &_content
+        display: flex
+        justify-content: space-between

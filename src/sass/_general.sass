@@ -225,6 +225,38 @@
                     background-position: center
                     background-size: cover
                     background-repeat: no-repeat
+        &_right
+            margin-left: 50px
+            &_btn
+                background-color: $dark_color
+                font-weight: 700
+                font-size: 18px
+                text-align: center
+                color: $orange_color
+                padding: 19px 50px
+                +btn_reset
+            &_title
+                font-size: 32px
+                text-align: center
+            &_descr
+                margin-bottom: 20px
+                font-weight: 400
+                color: $dark_color !important
+            &_list
+                margin-bottom: 45px
+                margin: 0
+                padding: 0
+                list-style-type: none
+                &_item
+                    &_colors
+                        +links_style_right
+                    &_star
+                        +links_style_right
+                    &_movie
+                        +links_style_right
+            &_list > li
+                &:not(last-child)
+                    margin-bottom: 26px
 
 .modal
     display: none

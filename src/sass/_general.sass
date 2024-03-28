@@ -247,13 +247,15 @@
                 margin: 0
                 padding: 0
                 list-style-type: none
-                &_item
-                    &_colors
-                        +links_style_right
-                    &_star
-                        +links_style_right
-                    &_movie
-                        +links_style_right
+                &_item-colors
+                    background: url('../icons/hp/color_lens.svg')
+                    +links_right
+                &_item-star
+                    background: url('../icons/hp/auto_awesome.svg')
+                    +links_right
+                &_item-movie
+                    background: url('../icons/hp/auto_awesome_motion.svg')
+                    +links_right
             &_list > li
                 &:not(last-child)
                     margin-bottom: 26px

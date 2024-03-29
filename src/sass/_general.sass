@@ -342,6 +342,31 @@
                     height: 36px
                     cursor: pointer
 
+.footer
+    &_top
+        padding: 14px 0 8px 0
+        &_content
+            display: flex
+            justify-content: space-between
+            align-items: center
+    &_link
+        display: inline-block
+        text-decoration: none
+        font-size: 15px
+        color: $dark_color
+        &:hover
+            text-decoration: none
+            color: $dark_color
+        &:not(last-child)
+            margin-right: 28px
+    &_bottom
+        background-color: $dark_color
+        padding: 13px 0
+small
+    display: block
+    text-align: center
+    font-size: 10px
+
 
 
 .modal

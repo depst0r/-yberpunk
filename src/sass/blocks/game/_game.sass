@@ -1,0 +1,104 @@
+.game
+    position: relative
+    padding: 91px 0 20px 0
+    background-color: $dark_color
+    &:before
+        content: ''
+        position: absolute
+        background-image: url('../img/noize/border-1.png')
+        height: 70px
+        width: 100%
+        background-repeat: repeat-x
+        left: 0
+        top: 0
+    &:after
+        content: ''
+        position: absolute
+        background-image: url('../img/noize/border-2.png')
+        height: 70px
+        width: 100%
+    &_title
+        margin: 0
+        line-height: 63px
+        margin-bottom: 23px
+        font-size: 32px
+        font-weight: 400
+        color: $light_color
+        &_img
+            background-image: url('../icons/Group.svg')
+            background-repeat: no-repeat
+            background-position: left center
+            padding: 60px 0 10px 158px
+    &_desc
+        max-width: 952px
+        margin-bottom: 52px
+        +description
+    &_desc > span
+        color: $blue_color   
+    &_content
+        display: flex
+        justify-content: space-between
+        &_form
+            padding-top: 60px
+            width: 36%
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            &_input
+                display: block
+                width: 100%
+                border: none
+                background-color: transparent
+                line-height: 10px
+                padding: 11px
+                padding-left: 0
+                color: $light_color
+                border-bottom: 1px solid $light_color
+                margin-bottom: 26px
+                &:nth-child(2)
+                    margin-bottom: 36px
+            &_label
+                width: 100%
+                position: relative
+                display: flex
+                flex-direction: column
+                align-items: center
+                color: $light_color
+                border: 1px dashed $light_color
+                padding: 40px
+                margin-bottom: 32px
+                cursor: pointer
+                &_text
+                    display: inline-block
+                    margin-bottom: 5px
+                    font-weight: 300
+                    font-size: 18px
+                    border-bottom: 1px solid $light_color
+            &_label > input
+                position: absolute
+                opacity: 0
+            &_btn
+                margin-bottom: 16px
+                padding: 19px 50px
+                color: $dark_color
+                background-color: $orange_color
+                +btn_reset
+            &_checkbox > input
+                margin-right: 10px
+            &_checkbox
+                display: flex
+                position: relative
+                &_text
+                    display: flex
+                    align-items: center
+                    font-weight: 300
+                    font-size: 10px
+                    line-height: 14px
+                    color: $light_color
+        &_pictures > div
+            &:nth-child(2)
+                padding-left: 50px
+        &_pictures
+            display: flex
+            justify-content: space-between
+            padding: 30px

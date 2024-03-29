@@ -178,22 +178,23 @@
         </div>
     </div>
     <div class="footer_bottom">
-        <small>CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</small>
+        <div class="container">
+            <small>CD PROJEKT®, Cyberpunk®, Cyberpunk 2077®</small>
+        </div>
     </div>
    </footer>
    <div class="modal">
-    <div class="container">
-        <div class="mpdal_wrapper">
-            <div class="modal_header">
-                <div class="modal_header_closet"></div>
-                <div class="modal_header_title"></div>
-            </div>
-            <div class="modal_body">
-                <div class="modal_body_inf"></div>
-            </div>
-            <div class="modal_footer"></div>
+    <div class="modal__dialog">
+        <div class="modal__content">
+            <form action="#">
+                <div class="modal__close" data-close>&times;</div>
+                <div class="modal__title">Мы свяжемся с вами как можно быстрее!</div>
+                <input required placeholder="Ваше имя" name="name" type="text" class="modal__input">
+                <input required placeholder="Ваш номер телефона" name="phone" type="phone" class="modal__input">
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
         </div>
     </div>
-   </div>
+</div>
 </body>
 </html>

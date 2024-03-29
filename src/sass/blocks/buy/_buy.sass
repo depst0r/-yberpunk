@@ -1,0 +1,80 @@
+.buy
+    position: relative
+    background-color: $dark_color
+    &_bg > img
+        position: absolute
+        height: 100%
+        width: 50%
+        max-width: 944px
+        object-fit: cover
+    &_container
+        display: flex
+        justify-content: flex-end
+        margin: 0 auto
+        padding: 0 36px
+    &_content
+        width: 50%
+        padding: 70px 0 65px 16px
+        &_title
+            margin: 0
+            margin-bottom: 23px
+            font-size: 40px
+            line-height: 63px
+            color: $light_color
+        &_subtitle
+            color: $blue_color
+        &_list
+            margin-bottom: 73px
+            margin: 0
+            padding: 0
+            list-style-type: none
+            margin-bottom: 73px
+            color: $light_color  
+            &_item-cd
+                background: url('../icons/disk.svg')
+                +links_right
+                color: $light_color
+                font-size: 12px
+            &_item-game
+                background: url('../icons/code.svg')
+                +links_right
+                color: $light_color
+                font-size: 12px
+            &_item-info
+                background: url('../icons/collections.svg')
+                +links_right
+                color: $light_color
+                font-size: 12px
+        &_list > li
+            &:not(last-child)
+                margin-bottom: 26px
+        &_sybtitle
+            color: $blue_color
+        &_list        
+            &_platform
+                max-width: 400px
+                display: grid
+                gap: 46px 30px
+                grid-template-columns: repeat(2, 1fr)
+                padding: 0
+                list-style-type: none
+                &_item-pc
+                    background: url('../icons/buy/pc.svg')
+                    background-repeat: no-repeat
+                    height: 34px
+                    cursor: pointer
+                &_item-xbox
+                    background: url('../icons/buy/xbox-one.svg')
+                    background-repeat: no-repeat
+                    height: 35px
+                    cursor: pointer
+                &_item-stadia
+                    background: url('../icons/buy/stadia.svg')
+                    background-repeat: no-repeat
+                    height: 51px
+                    cursor: pointer
+                &_item-ps
+                    background: url('../icons/buy/ps.svg')
+                    background-repeat: no-repeat
+                    height: 36px
+                    cursor: pointer

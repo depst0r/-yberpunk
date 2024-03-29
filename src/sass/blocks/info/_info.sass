@@ -1,0 +1,24 @@
+.info
+    padding: 71px 0 55px 0
+    &_title
+        margin: 0
+        padding: 0 0 55px 0
+        font-weight: 400
+        line-height: 63px
+        text-align: center
+    &_subtitle
+        text-align: center
+        padding: 0 0 60px 0
+        +description
+        &_description
+            color: $blue_color
+    &_img
+        display: flex
+        &_left
+            margin-right: 32px
+            &_wrapper
+                +corner
+                &:not(:last-child)
+                    margin-bottom: 32px
+        &_bg
+            +corner

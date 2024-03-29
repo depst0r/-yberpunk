@@ -1,0 +1,39 @@
+.hero
+    position: relative
+    height: 1000px
+    &_bg
+        position: absolute
+        background: url('../img/bg/bg_slider_3.jpg') center (center / cover) no-repeat
+        height: 100%
+        width: 100%
+        z-index: -1
+    &_wrapper
+        display: flex
+        height: 100%
+        align-items: flex-end
+        justify-content: flex-end
+        margin: 0 auto
+        padding: 0 36px
+        position: relative
+        z-index: 5
+        &_container
+            position: relative
+            z-index: 5
+            max-width: 524px
+            padding: 70px
+            background-color: $orange_color
+            +corner
+    &_btn
+        background-color: $dark_color
+        color: $orange_color
+        font-weight: 700
+        text-align: center
+        font-size: 24
+        padding: 24px 50px
+        +btn_reset
+    &_title
+        margin: 0
+        margin-bottom: 24px
+        font-weight: 400
+        font-size: 35px
+        color: $dark_color

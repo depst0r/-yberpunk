@@ -1,0 +1,57 @@
+.hp
+    padding-top: 100px
+    background-color: $orange_color
+    &_content
+        display: flex
+        justify-content: space-between
+        padding-bottom: 50px
+        &_left > img
+            margin-bottom: 30px
+        &_left
+            display: flex
+            flex-direction: column
+            align-items: center
+            &_logos
+                &_sep
+                    margin: 0 30px
+                    display: inline-block
+                    height: 20px
+                    width: 90px
+                    background-image: url('../img/logo/sep.svg')
+                    background-position: center
+                    background-size: cover
+                    background-repeat: no-repeat
+        &_right
+            margin-left: 50px
+            &_btn
+                background-color: $dark_color
+                font-weight: 700
+                font-size: 18px
+                text-align: center
+                color: $orange_color
+                padding: 19px 50px
+                +btn_reset
+            &_title
+                font-size: 32px
+                text-align: center
+            &_descr
+                margin-bottom: 20px
+                font-weight: 400
+                color: $dark_color !important
+            &_list
+                margin-bottom: 45px
+                margin: 0
+                padding: 0
+                list-style-type: none
+                &_item-colors
+                    background: url('../icons/hp/color_lens.svg')
+                    +links_right
+                &_item-star
+                    background: url('../icons/hp/auto_awesome.svg')
+                    +links_right
+                &_item-movie
+                    background: url('../icons/hp/auto_awesome_motion.svg')
+                    +links_right
+            &_list > li
+                &:not(last-child)
+                    margin-bottom: 26px
